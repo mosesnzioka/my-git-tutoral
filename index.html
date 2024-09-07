@@ -90,8 +90,72 @@
              </ul>
             
              <figure style="text-align: left;"></figure>
-            <img src="./images/cmd4.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <img src="./images/cmd5.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>This shows how to initialize your repository.</figcaption>
           </figure>
+          <h2>Committing file</h2>
+          <p>A commit in git is basically a snapshot of your project at a particular point in time.<br>
+        when writing a commit message you should ask your self this question<b>what this commit will do...?</b><br>
+    the you write the answer as the commit message. To commit files you use this command <b>git commit -m "message"</b></p>
+    
+    <figure style="text-align: left;"></figure>
+            <img src="./images/cmd6.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>Commiting changes in your Repository.</figcaption>
+          </figure>
+          <p>To go back to previous commit and going to specifict commit you use this commands<b>git log</b>and <br>
+        <b>git log --oneline</b> respectively.</p>
+        <figure style="text-align: left;"></figure>
+            <img src="./images/cmd7.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>Viewing past commits.</figcaption>
+          </figure><br>
+          
+          <figure style="text-align: left;"></figure>
+            <img src="./images/cmd8.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>Going back to particular commit.</figcaption>
+          </figure>
+          <h2>Branches in Git</h2>
+          <h4>Creating and Viewing branches in Git</h4>
+          <p>Branch in Git is a separate workspace where you can work on new features, bug fixes,<br>
+             or experiments without affecting the main codebase. Branches are important becouse they anable colaboration.</p>
+             <p>To creat a new Branch in your Git you use this command <b>git branch BRANCH_NAME.</b> To view branch you use this command <b>git branch</b><br>
+            always the active branch will be colored. For example lets create a branch called moses_nzioka and view it.</p>
+            <figure style="text-align: left;"></figure>
+            <img src="./images/cmd9.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>To create and view branch in Git using command prompt.</figcaption>
+          </figure>
+
+          <h2>Switching active Branch</h2>
+          <p>To switch branch you type <b>git switch BRANCH_NAME</b> to your command prompt.
+          For example lets switch to the branch we created before.</p> 
+          
+          <figure style="text-align: left;"></figure>
+            <img src="./images/cmd10.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>Switching to a certain branch.</figcaption>
+          </figure>
+          <h2>Merging Branch</h2>
+          <p>Almost all the times, we want to incorporate things we've done in our branches into destination branch.</p>
+          <h4>To merge branch:</h4>
+          <ul>
+            <li>First, we switch to the branch where we want to merge the current branch. Then use this command<b>git merge BRANCH_NAME</b></li>
+            <li>where BRANCH_NAME is the name of the branch we want to merge to the current active branch.</li>
+            <li>Lets assum our official branch is called 'main' and we have content in a branch called 'moses_nzioka' that we want to merge into main</li>
+            <li>We start by switching to the main branch where we want to merge the changes from 'moses_nzioka'<b>git switch main </b> .</li>
+            <li>We then use the git merge to merge the content from moses_nzioka to main <b>git merge moses_nzioka</b> .</li>
+          </ul>
+          <figure style="text-align: left;"></figure>
+            <img src="./images/cmd11.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>Merging branches.</figcaption>
+          </figure>
+          <h2>Deleting Branche</h2>
+          <p>After working on branches and merging the changes to the main branch, usually we don't need that branch anymore,<br>
+             and it is safe to delete it.<br>
+            To delete a branch, we use the git branch command and pass the -d flag <b>git branch -d BRANCH_NAME</b></p>
+            <figure style="text-align: left;"></figure>
+            <img src="./images/cmd12.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>Deleting Branch.</figcaption>
+          </figure>
+          <h2>Next Step</h2>
+          <p>You can look forward to learn about hosting your repository to the internet also you can learn more about Github</p>
+
 </body>
 </html>
