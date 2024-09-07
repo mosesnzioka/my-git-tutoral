@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git tutoral</title>
+    <link rel="icon" type="image/x-icon" href="./images/www.png">
+</head>
+<body>
+    <h2><b>Get Started</b></h2>
+    <p>Open your File Explorer and create a new folder of your own name,<br>
+         open the folder you created and at the top side where there is something like a search bar<br>
+        click on that bar and type a command <strong>cmd</strong> and press enter, that command will <br> 
+    open your command prompt </p>
+    
+    
+    <figure style="text-align: left;">
+        <img src="./images/cmd1.PNG" width="400px" height="200px" alt="this is the command prompt">
+        <figcaption>This is the command prompt that open after the command cmd .</figcaption>
+      </figure>
+      <p>when the visual studio opens create a file named <strong>index.html</strong><br>
+         and a folder named <strong>images</strong>  under the the folder you created before, for images you will use when developing your web.</p>
+
+         <h2>What is Git </h2>
+         <p>Git is a Version Control System.</p>
+         <p>A version control system is a software that tracks and manages changes to files over time.<br>
+            Version Control Systems allow users to revisit earlier versions of their files, compare changes between versions,<br>and undo changes.</p>
+            <h4>Other version control systems are:_</h4>
+        <ul>
+            <li>Subversion</li>
+            <li>CVS</li>
+            <li>Mercurial</li>
+        </ul>
+        <p>They all have a common goal but for now we will be talking about Git and GitHub.</p>
+            <h2>What is GitHub</h2>
+            <p>GitHub is a web-based platform that provides version control and collaboration tools for software development.<br>
+                It allows developers to host, review, and manage code, track changes, and collaborate with others on projects.<br>
+                GitHub is built around Git, making it easier for teams to work together and maintain a history of their codebase.</p>
+        
+        <h2>Installing Git</h2>
+        <p>First of all confirm if Git is installed into your computer and to do this follow following steps.</p>
+        <ul>
+            <li>On the command prompt you open before type <b>git --version</b> and enter key.</li>
+            <li>If a version number is returned, Git is installed on your computer. If you receive any other output, Git is not installed.</li>
+            <li>If not installed use this link to download Git version on your computer.</li>
+            <a href="https://git-scm.com/download"></a>
+        </ul>
+
+        <figure style="text-align: left;">
+            <img src="./images/cmd2.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>Cheking if Git is installed in your system.</figcaption>
+          </figure>
+
+          <h2>Configuring Git</h2>
+          <p>To configure Git does as follows</p>
+          <ul>
+            <li>To configure username type <b>git config --global user.name "USERNAME"</b>  and press enter key.</li>
+            <li>To configure email type <b>git config --global user.email "EMAIL"</b>  and press enter key.</li>
+            <li>For example if your username is daniel, type <b>git config --global user.name "daniel"</b> and press enter key.<br>
+            and if your email is example@gmail.com type <b>git config --global user.email "example@gamil.com"</b> and press enter key.</li>
+            <li>Rember that you should have a github account becouse the email and username should be as they appear in your github account.</li>
+            <li>After configuring and type <b>git config user.name</b>or <b>git config user.email</b> should return your username and email as in your github respectevly</li>
+            <li>the screenshort bellow represents my configuration</li>
+          </ul>
+          <figure style="text-align: left;"></figure>
+            <img src="./images/cmd3.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>This is to confirm your configuration.</figcaption>
+          </figure>
+          <h2>Initializing Github Repository</h2>
+          <h3>What is Git Repository</h3>
+          <p>A git Repository is a workspace which tracks and manages files within a folder.<br>
+        A point to note<em> a project should have a single Git repository.</em></p>
+        <P>Before initializing your git repository type <b>git status</b> to confirm if was initialized before becouse it should be initialized just once.<br>
+            When you run the <b>git status</b> command and get the message "fatal: not a git repository..." being returned,<br>
+             then it means that the project does not have a git repository, you can go ahead and initialize one</P>
+        <p>To initialize Git repository go to your command prompt and type <b>git init</b> and press enter key.</p>
+
+        <figure style="text-align: left;"></figure>
+            <img src="./images/cmd4.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>This shows how to initialize your repository.</figcaption>
+          </figure>
+        <h2>Adding files to the staging Area</h2>
+        <p>Staging area is an intermediate space where you can organize changes before committing them to the repository.<br>
+            When you make changes to files in your working directory, those changes aren't immediately included in the next commit.<br>
+             Instead, you need to add these changes to the staging area using the <b>git add .</b> command.</p>
+             <p>in Git there are two files which are <b>Tracked and Untracked,</b> and the difference between this files is that:_</p>
+             <ul>
+                <li><b>Tracked files:</b>git is aware of and is tracking for changes</li>
+                <li><b>Untracked files: </b>These are files that exist in your working directory but have not been added to the repository</li>
+             </ul>
+            
+             <figure style="text-align: left;"></figure>
+            <img src="./images/cmd4.PNG" width="400px" height="200px" alt="this is the command prompt">
+            <figcaption>This shows how to initialize your repository.</figcaption>
+          </figure>
+</body>
+</html>
