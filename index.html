@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git tutoral</title>
     <link rel="icon" type="image/x-icon" href="./images/www.png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2><b>Get Started</b></h2>
+  <div class="container">
+  <h1>THIS IS A GUIDE ON HOW TO USE GIT</h1>
+    <h2 id="the-hover"><b>Get Started</b></h2>
+    <h2>Set a Working Environment</h2>
     <p>Open your File Explorer and create a new folder of your own name,<br>
          open the folder you created and at the top side where there is something like a search bar<br>
         click on that bar and type a command <strong>cmd</strong> and press enter, that command will <br> 
     open your command prompt </p>
     
     
-    <figure style="text-align: left;">
+    <figure>
         <img src="./images/cmd1.PNG" width="400px" height="200px" alt="this is the command prompt">
         <figcaption>This is the command prompt that open after the command cmd .</figcaption>
       </figure>
@@ -42,11 +47,11 @@
         <ul>
             <li>On the command prompt you open before type <b>git --version</b> and enter key.</li>
             <li>If a version number is returned, Git is installed on your computer. If you receive any other output, Git is not installed.</li>
-            <li>If not installed use this link to download Git version on your computer.</li>
-            <a href="https://git-scm.com/download"></a>
+            <li>If not installed use this link to download Git version on your computer.<a href="https://git-scm.com/downloads/" target="_blank">download Git!</a></li>
+            
         </ul>
 
-        <figure style="text-align: left;">
+        <figure>
             <img src="./images/cmd2.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>Cheking if Git is installed in your system.</figcaption>
           </figure>
@@ -62,7 +67,7 @@
             <li>After configuring and type <b>git config user.name</b>or <b>git config user.email</b> should return your username and email as in your github respectevly</li>
             <li>the screenshort bellow represents my configuration</li>
           </ul>
-          <figure style="text-align: left;"></figure>
+          <figure>
             <img src="./images/cmd3.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>This is to confirm your configuration.</figcaption>
           </figure>
@@ -75,7 +80,7 @@
              then it means that the project does not have a git repository, you can go ahead and initialize one</P>
         <p>To initialize Git repository go to your command prompt and type <b>git init</b> and press enter key.</p>
 
-        <figure style="text-align: left;"></figure>
+        <figure>
             <img src="./images/cmd4.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>This shows how to initialize your repository.</figcaption>
           </figure>
@@ -89,7 +94,7 @@
                 <li><b>Untracked files: </b>These are files that exist in your working directory but have not been added to the repository</li>
              </ul>
             
-             <figure style="text-align: left;"></figure>
+             <figure>
             <img src="./images/cmd5.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>This shows how to initialize your repository.</figcaption>
           </figure>
@@ -98,18 +103,19 @@
         when writing a commit message you should ask your self this question<b>what this commit will do...?</b><br>
     the you write the answer as the commit message. To commit files you use this command <b>git commit -m "message"</b></p>
     
-    <figure style="text-align: left;"></figure>
+    <figure>
             <img src="./images/cmd6.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>Commiting changes in your Repository.</figcaption>
           </figure>
           <p>To go back to previous commit and going to specifict commit you use this commands<b>git log</b>and <br>
         <b>git log --oneline</b> respectively.</p>
-        <figure style="text-align: left;"></figure>
+
+        <figure>
             <img src="./images/cmd7.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>Viewing past commits.</figcaption>
           </figure><br>
           
-          <figure style="text-align: left;"></figure>
+          <figure>
             <img src="./images/cmd8.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>Going back to particular commit.</figcaption>
           </figure>
@@ -119,7 +125,7 @@
              or experiments without affecting the main codebase. Branches are important becouse they anable colaboration.</p>
              <p>To creat a new Branch in your Git you use this command <b>git branch BRANCH_NAME.</b> To view branch you use this command <b>git branch</b><br>
             always the active branch will be colored. For example lets create a branch called moses_nzioka and view it.</p>
-            <figure style="text-align: left;"></figure>
+            <figure>
             <img src="./images/cmd9.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>To create and view branch in Git using command prompt.</figcaption>
           </figure>
@@ -128,7 +134,7 @@
           <p>To switch branch you type <b>git switch BRANCH_NAME</b> to your command prompt.
           For example lets switch to the branch we created before.</p> 
           
-          <figure style="text-align: left;"></figure>
+          <figure>
             <img src="./images/cmd10.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>Switching to a certain branch.</figcaption>
           </figure>
@@ -142,20 +148,21 @@
             <li>We start by switching to the main branch where we want to merge the changes from 'moses_nzioka'<b>git switch main </b> .</li>
             <li>We then use the git merge to merge the content from moses_nzioka to main <b>git merge moses_nzioka</b> .</li>
           </ul>
-          <figure style="text-align: left;"></figure>
+          <figure>
             <img src="./images/cmd11.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>Merging branches.</figcaption>
           </figure>
-          <h2>Deleting Branche</h2>
+          <h2>Deleting Branch</h2>
           <p>After working on branches and merging the changes to the main branch, usually we don't need that branch anymore,<br>
              and it is safe to delete it.<br>
             To delete a branch, we use the git branch command and pass the -d flag <b>git branch -d BRANCH_NAME</b></p>
-            <figure style="text-align: left;"></figure>
+            <figure>
             <img src="./images/cmd12.PNG" width="400px" height="200px" alt="this is the command prompt">
             <figcaption>Deleting Branch.</figcaption>
           </figure>
           <h2>Next Step</h2>
           <p>You can look forward to learn about hosting your repository to the internet also you can learn more about Github</p>
-
+        </div>
 </body>
+
 </html>
